@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Rubik&family=Staatliches&display=swap");
+
+$Rubik: "Rubik", sans-serif;
+
+// colors
+$primary-1: #145932;
+$primary-2: #145f37;
+$primary-3: #548a6e;
+$primary-4: #80a690;
+
+$shade-1: #bfbfbf6e;
+$shade-2: #bfbfbf;
+
+$dark: rgb(40, 40, 40);
+$light: #f2f2f2;
+
+$bg: rgb(244, 244, 255);
+// spacing
+$spacing-1: 0.1rem;
+$spacing-2: 0.5rem;
+$spacing-3: 1rem;
+
+// border-radius
+$borderRadius: 15px;
+
+//header Height
+$headerHeight: 70px;
+
+@mixin breakpoint($point) {
+  @if $point == md {
+    //768px
+    @media (min-width: 48em) {
+      @content;
+    }
+  }
+}

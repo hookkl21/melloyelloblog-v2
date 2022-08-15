@@ -1,0 +1,8 @@
+.container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 70% 30%;
+  @media (max-width: 765px) {
+    grid-template-columns: 50% 50%;
+  }
+}

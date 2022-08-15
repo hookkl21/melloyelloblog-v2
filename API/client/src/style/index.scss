@@ -1,0 +1,20 @@
+@import "./variables.scss";
+
+/* Global */
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  font-family: $Rubik;
+  color: $dark;
+}
+#root {
+  height: 100%;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}

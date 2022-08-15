@@ -1,0 +1,70 @@
+@import "../style/variables.scss";
+
+.sidebar {
+  height: 400px;
+  margin-top: 2rem;
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  h1,
+  h2,
+  h3,
+  h4 {
+    margin-bottom: 1rem;
+    @media (max-width: 765px) {
+      line-height: 1rem;
+      font-size: small;
+    }
+  }
+  ul {
+    @media (max-width: 765px) {
+      padding: 0.2rem;
+    }
+  }
+  ul li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    padding: 0 1rem;
+    cursor: pointer;
+    @media (max-width: 765px) {
+      padding: 0 0.2rem;
+      font-weight: 100;
+    }
+  }
+  @media (max-width: 765px) {
+    margin: 1.5rem 1rem;
+  }
+  &_items {
+    &_categories {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 1rem;
+      background: linear-gradient(220deg, $primary-2, rgba($primary-2, 0.7));
+      border-radius: $borderRadius calc(#{$borderRadius} * 5);
+    }
+    &_subtitle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.5rem 2rem;
+      background: linear-gradient(220deg, $primary-3, rgba($primary-3, 0.7));
+      border-radius: $borderRadius calc(#{$borderRadius} * 5);
+      @media (max-width: 765px) {
+        padding: 0.2rem 0.5rem;
+      }
+    }
+    &_lists {
+      font-size: 16px;
+      padding: 0 1rem;
+      @media (max-width: 765px) {
+        font-size: 14px;
+        padding: 0rem 0.5rem;
+      }
+    }
+  }
+}
